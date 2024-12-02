@@ -360,7 +360,7 @@ html {
   }
   .kbo-container {
     height: unset;
-    overflow: unset;
+    overflow: visible;
     width: 100%;
   }
   .kbo-container * {

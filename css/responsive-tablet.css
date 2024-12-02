@@ -337,7 +337,7 @@ html {
   }
   .kbo-container {
     height: unset;
-    overflow: unset;
+    overflow: visible;
   }
   .kbo-container * {
     font-family: "KBODiaGothic";
