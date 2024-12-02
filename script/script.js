@@ -1052,17 +1052,17 @@ document.addEventListener('DOMContentLoaded', function(){
   
     item02.addEventListener('mouseenter', function(){
       content.style.top = '-144px';
-      img.style.left = 'calc(50% - 1253px)';
+      img.style.left = 'calc(50% - 1273px)';
     });
   
     item03.addEventListener('mouseenter', function(){
       content.style.top = '-288px';
-      img.style.left = 'calc(50% - 2353px)';
+      img.style.left = 'calc(50% - 2373px)';
     });
   
     item04.addEventListener('mouseenter', function(){
       content.style.top = '-432px';
-      img.style.left = 'calc(50% - 3473px)';
+      img.style.left = 'calc(50% - 3513px)';
     });
   }else{
     if(matchMedia("screen and (min-width : 421px)").matches){
