@@ -717,7 +717,7 @@ html {
   }
   .kbo-container .full-page-slider-container section.shop .shop-wrap {
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     height: 179.947916666vw;
     padding: 10.416666vw 0 6.640625vw 0;
     gap: 2.86458333vw;
@@ -780,7 +780,7 @@ html {
     padding: 7.9420833vw 3.90625vw;
   }
   footer.footer .footer-wrap {
-    width: 100%;
+    width: 100vw;
     height: 78.64583333vw;
     flex-direction: column;
     gap: 11.458333vw;
