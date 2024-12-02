@@ -990,7 +990,7 @@ document.addEventListener('DOMContentLoaded', function(){
         }
       });
     }else{
-      fetch("/html/responsiveSoori.html").then((response)=> response.text()).then((data) => {
+      fetch("html/responsiveSoori.html").then((response)=> response.text()).then((data) => {
         document.querySelector('.team').innerHTML = data;
 
         let responseBox = document.getElementById('responsive-box');
