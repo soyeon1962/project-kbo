@@ -819,7 +819,7 @@ document.addEventListener('DOMContentLoaded', function(){
         'images/team-hanwha-background-img.png',
         'images/team-nc-background-img.png',
         'images/team-kiwoom-background-img.png',
-        'images/SNS-kbo.png',
+        'images/sns-kbo.png',
       ];
   
       //soori section 구단 이름
