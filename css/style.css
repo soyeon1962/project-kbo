@@ -1073,7 +1073,8 @@ body {
   left: 97px;
   transition: opacity 0.5s ease;
   opacity: 1;
-  width: 60vw;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .kbo-container .full-page-slider-container section.team .team-img-area h1.hidden {
   opacity: 0;
