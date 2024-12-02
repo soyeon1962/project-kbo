@@ -228,16 +228,16 @@ matchTab.forEach((tab) => {
 /* ############### 이미지 등 삽입 요소 ############## */
 
 let teamLogos = {
-  "KIA": "/images/logo-kia.svg",
-  "삼성": "/images/logo-samsung.svg",
-  "두산": "/images/logo-doosan.svg",
-  "NC": "/images/logo-nc.svg",
-  "LG": "/images/logo-lg.svg",
-  "SSG": "/images/logo-ssg.svg",
-  "한화": "/images/logo-hanwha.svg",
-  "키움": "/images/logo-kiwoom.svg",
-  "롯데": "/images/logo-lotte.svg",
-  "KT": "/images/logo-kt.svg"
+  "KIA": "images/logo-kia.svg",
+  "삼성": "images/logo-samsung.svg",
+  "두산": "images/logo-doosan.svg",
+  "NC": "images/logo-nc.svg",
+  "LG": "images/logo-lg.svg",
+  "SSG": "images/logo-ssg.svg",
+  "한화": "images/logo-hanwha.svg",
+  "키움": "images/logo-kiwoom.svg",
+  "롯데": "images/logo-lotte.svg",
+  "KT": "images/logo-kt.svg"
 };
 
 // team1과 team2의 로고 설정
@@ -367,16 +367,16 @@ function showMatchDetails(matchId) {
 
     /* ############### 이미지 등 삽입 요소 ############## */
 let teamLogos = {
-  "KIA": "/images/logo-kia.svg",
-  "삼성": "/images/logo-samsung.svg",
-  "두산": "/images/logo-doosan.svg",
-  "NC": "/images/logo-nc.svg",
-  "LG": "/images/logo-lg.svg",
-  "SSG": "/images/logo-ssg.svg",
-  "한화": "/images/logo-hanwha.svg",
-  "키움": "/images/logo-kiwoom.svg",
-  "롯데": "/images/logo-lotte.svg",
-  "KT": "/images/logo-kt.svg"
+  "KIA": "images/logo-kia.svg",
+  "삼성": "images/logo-samsung.svg",
+  "두산": "images/logo-doosan.svg",
+  "NC": "images/logo-nc.svg",
+  "LG": "images/logo-lg.svg",
+  "SSG": "images/logo-ssg.svg",
+  "한화": "images/logo-hanwha.svg",
+  "키움": "images/logo-kiwoom.svg",
+  "롯데": "images/logo-lotte.svg",
+  "KT": "images/logo-kt.svg"
 };
 
 // team1과 team2의 로고 설정
@@ -552,16 +552,16 @@ function UpdatePostNextDate() {
 // 팀 로고 가져오기 함수
 function getTeamLogo(teamName) {
   const teamLogos = {
-    KIA: "/images/logo-kia.svg",
-    삼성: "/images/logo-samsung.svg",
-    두산: "/images/logo-doosan.svg",
-    NC: "/images/logo-nc.svg",
-    LG: "/images/logo-lg.svg",
-    SSG: "/images/logo-ssg.svg",
-    한화: "/images/logo-hanwha.svg",
-    키움: "/images/logo-kiwoom.svg",
-    롯데: "/images/logo-lotte.svg",
-    KT: "/images/logo-kt.svg",
+    KIA: "images/logo-kia.svg",
+    삼성: "images/logo-samsung.svg",
+    두산: "images/logo-doosan.svg",
+    NC: "images/logo-nc.svg",
+    LG: "images/logo-lg.svg",
+    SSG: "images/logo-ssg.svg",
+    한화: "images/logo-hanwha.svg",
+    키움: "images/logo-kiwoom.svg",
+    롯데: "images/logo-lotte.svg",
+    KT: "images/logo-kt.svg",
   };
   return teamLogos[teamName] || ""; // 로고가 없을 경우 기본 로고 반환
 }
