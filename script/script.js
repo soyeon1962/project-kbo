@@ -1039,6 +1039,12 @@ document.addEventListener('DOMContentLoaded', function(){
   let img = document.getElementById('img-wrap');
     
   if(matchMedia("screen and (min-width : 769px)").matches){
+    //##리사이징##//
+    window.addEventListener('resize', function(){
+      const kboBody = document.getElementsByClassName('kbo-container')[0];
+      kboBody.style.overflow = 'visible';
+    });
+
     item01.addEventListener('mouseenter', function(){
       content.style.top = '0px';
       img.style.left = 'calc(50% - 203px)';
@@ -1080,6 +1086,12 @@ document.addEventListener('DOMContentLoaded', function(){
         img.style.left = 'calc(50% - 356.901041666vw)';
       });
     }else{
+      //##리사이징##//
+      window.addEventListener('resize', function(){
+        const kboBody = document.getElementsByClassName('kbo-container')[0];
+        kboBody.style.overflow = 'visible';
+      });
+
       item01.addEventListener('mouseenter', function(){
         content.style.top = '0px';
         img.style.left = 'calc(50% - 27.3809523vw)';
