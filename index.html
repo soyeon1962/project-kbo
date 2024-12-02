@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>KBO 리뉴얼 홈페이지 - 메인</title>
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive-mobile.css">
+  <link rel="stylesheet" href="css/responsive-tablet.css">
+</head>
+<body>
+  <header id="header"></header>
+  <div class="kbo-container">
+    <div class="full-page-slider-container" id="slider">
+      <section id="slide1" class="slide main-visual">
+        <div class="main-video">
+          <video autoplay muted loop playsinline>
+            <source src="images/video/main.mp4" id="video-source">
+          </video>
+        </div>
+        <div class="scroll-down">
+          <span>SCROLL</span>
+          <i class="bi bi-chevron-down"></i>
+        </div>
+      </section>
+      <section id="slide2" class="slide match">
+        <div class="match-inner">
+          <ul class="match-tab">
+            <li data-match="regular-season" class="active">KBO 정규시즌</li>
+            <li data-match="post-season">KBO 포스트시즌</li>
+            <li data-match="ranking">KBO 순위</li>
+          </ul>
+          <div id="regular-season" class="match-box active">
+            <div class="right-box">
+              <div class="regular-date">
+                <button class="prev-date" onclick="UpdateRegularPrevDate()">
+                  <i class="bi bi-chevron-left"></i>
+                </button>
+              <span id="update-regular-date"></span>
+              <button class="next-date" onclick="UpdateRegularNextDate()">
+                <i class="bi bi-chevron-right"></i>
+              </button>
+            </div>
+            </div>
+            <div class="left-box">
+              <div class="match-title">MATCH</div>
+              <div class="match-detail">
+              </div>
+            </div>
+          </div>
+          <div id="post-season" class="match-box">
+            <div class="post-season-title">
+              <div class="post-date">
+                <button class="prev-date" onclick="UpdatePostPrevDate()">
+                  <i class="bi bi-chevron-left"></i>
+                </button>
+              <span>MATCH</span>
+              <button class="next-date" onclick="UpdatePostNextDate()">
+                <i class="bi bi-chevron-right"></i>
+              </button>
+            </div>
+            </div>
+            <div class="post-season-match">
+            </div>
+          </div>
+          <div id="ranking" class="match-box">
+            <div class="ranking-title">RANKING</div>
+            <table class="ranking-table">
+              <thead>
+              <tr>
+              <th>순위</th>
+              <th>팀명</th>
+              <th>경기</th>
+              <th>승</th>
+              <th>패</th>
+              <th>무</th>
+              <th>승률</th>
+              <th>게임차</th>
+              <th>최근10경기</th>
+              <th>연속</th>
+              <th>홈</th>
+              <th>방문</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+              <td>1</td>
+              <td>KIA</td>
+              <td>144</td>
+              <td>87</td>
+              <td>55</td>
+              <td>2</td>
+              <td>0.613</td>
+              <td>0</td>
+              <td>5승0무5패</td>
+              <td>2승</td>
+              <td>42-1-30</td>
+              <td>45-1-25</td>
+              </tr>
+              <tr>
+              <td>2</td>
+              <td>삼성</td>
+              <td>144</td>
+              <td>78</td>
+              <td>64</td>
+              <td>2</td>
+              <td>0.549</td>
+              <td>9</td>
+              <td>3승0무7패</td>
+              <td>1패</td>
+              <td>41-0-32</td>
+              <td>37-2-32</td>
+              </tr>
+              <tr>
+              <td>3</td>
+              <td>LG</td>
+              <td>144</td>
+              <td>76</td>
+              <td>66</td>
+              <td>2</td>
+              <td>0.535</td>
+              <td>11</td>
+              <td>7승0무3패</td>
+              <td>2승</td>
+              <td>39-1-33</td>
+              <td>37-1-33</td>
+              </tr>
+              <tr>
+              <td>4</td>
+              <td>두산</td>
+              <td>144</td>
+              <td>74</td>
+              <td>68</td>
+              <td>2</td>
+              <td>0.521</td>
+              <td>13</td>
+              <td>8승0무2패</td>
+              <td>4승</td>
+              <td>39-1-31</td>
+              <td>35-1-37</td>
+              </tr>
+              <tr>
+              <td>5</td>
+              <td>KT</td>
+              <td>144</td>
+              <td>72</td>
+              <td>70</td>
+              <td>2</td>
+              <td>0.507</td>
+              <td>15</td>
+              <td>5승0무5패</td>
+              <td>3승</td>
+              <td>34-1-36</td>
+              <td>38-1-34</td>
+              </tr>
+              <tr>
+              <td>6</td>
+              <td>SSG</td>
+              <td>144</td>
+              <td>72</td>
+              <td>70</td>
+              <td>2</td>
+              <td>0.507</td>
+              <td>15</td>
+              <td>8승0무2패</td>
+              <td>4승</td>
+              <td>35-1-35</td>
+              <td>37-1-35</td>
+              </tr>
+              <tr>
+              <td>7</td>
+              <td>롯데</td>
+              <td>144</td>
+              <td>66</td>
+              <td>74</td>
+              <td>4</td>
+              <td>0.471</td>
+              <td>20</td>
+              <td>4승0무6패</td>
+              <td>1승</td>
+              <td>37-3-31</td>
+              <td>29-1-43</td>
+              </tr>
+              <tr>
+              <td>8</td>
+              <td>한화</td>
+              <td>144</td>
+              <td>66</td>
+              <td>76</td>
+              <td>2</td>
+              <td>0.465</td>
+              <td>21</td>
+              <td>5승0무5패</td>
+              <td>2패</td>
+              <td>30-2-39</td>
+              <td>36-0-37</td>
+              </tr>
+              <tr>
+              <td>9</td>
+              <td>NC</td>
+              <td>144</td>
+              <td>61</td>
+              <td>81</td>
+              <td>2</td>
+              <td>0.430</td>
+              <td>26</td>
+              <td>2승0무8패</td>
+              <td>2패</td>
+              <td>34-0-39</td>
+              <td>27-2-42</td>
+              </tr>
+              <tr>
+              <td>10</td>
+              <td>키움</td>
+              <td>144</td>
+              <td>58</td>
+              <td>86</td>
+              <td>0</td>
+              <td>0.403</td>
+              <td>30</td>
+              <td>1승0무9패</td>
+              <td>5패</td>
+              <td>32-0-41</td>
+              <td>26-0-45</td>
+              </tr>
+              </tbody>
+              </table>
+          </div>
+        </div>
+      </section>
+      <section id="slide3" class="slide news">
+        <div class="news-inner">
+          <div class="sideGradientLeft"></div>
+          <div class="news-img-wrap">
+            <ul>
+              <li>
+                <img src="images/news-01.png" alt="">
+                <span>라팍 뒤흔든 김태군 생애 첫 만루포+테스형 투런포...KIA 3승1패</span>
+              </li>
+              <li>
+                <img src="images/news-02.png" alt="">
+                <span>라팍포 4방, '가을의 사나이' 레예스 영웅투...삼성 반격의 1승</span>
+              </li>
+              <li>
+                <img src="images/news-03.jpg" alt="">
+                <span>‘임찬규+에르난데스 완봉 합작’ LG, 삼성 1-0 꺾고 반격의 1승</span>
+              </li>
+              <li>
+                <img src="images/news-04.jpg" alt="">
+                <span>‘기적의 팀’ KT, 연장 11회 끝내기→극적인 4차전 승리. 2승2패</span>
+              </li>
+            </ul>
+          </div>
+          <a href="#none" class="commonBtn">
+            <span>MORE NEWS</span>
+          </a>
+          <div class="sideGradientRigth"></div>
+        </div>
+      </section>
+      <section id="slide4" class="slide highlight">
+        <div class="highlight-inner">
+          <div class="highlight-container">
+            <div id="first-card" class="card">
+              <iframe class="VideoHighlight" src="https://www.youtube.com/embed/8HyQHBYaROQ?enablejsapi=1&si=SNBvDosGtgF9bhKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+              <img src="images/thumbnail-01.jpg" alt="">
+            </div>
+            <div id="second-card" class="card">
+              <iframe class="VideoHighlight" src="https://www.youtube.com/embed/uaK6e95za0w?enablejsapi=1&si=rN3iYgZwvGRJKg3r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <img src="images/thumbnail-02.jpg" alt="">
+            </div>
+            <div id="third-card" class="card">
+              <iframe class="VideoHighlight"  src="https://www.youtube.com/embed/KX9a8IufZzk?enablejsapi=1&si=x5aJZya_4jA1IMBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <img src="images/thumbnail-03.jpg" alt="">
+            </div>
+            <div id="fourth-card" class="card">
+              <iframe class="VideoHighlight" src="https://www.youtube.com/embed/h2sSFb4iO5w?enablejsapi=1&si=irwyeePz2KKTrHgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <img src="images/thumbnail-04.jpg" alt="">
+            </div>
+            <div id="fifth-card" class="card">
+              <iframe class="VideoHighlight" src="https://www.youtube.com/embed/CPjtZBpAAiM?enablejsapi=1&si=BsC4s5afzHztvvxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <img src="images/thumbnail-05.jpg" alt="">
+            </div>
+            <div id="sixth-card" class="card">
+              <iframe class="VideoHighlight" src="https://www.youtube.com/embed/Zvk6AGqAwCw?enablejsapi=1&si=2xbXKQLgd12xdXnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <img src="images/thumbnail-06.jpg" alt="">
+            </div>
+            <i class="bi bi-chevron-left prveBtn" id="left"></i>
+            <i class="bi bi-chevron-right nextBtn" id="right"></i>
+            <a href="#none" class="commonBtn highlights">
+              <span>MORE HIGHLIGHTS</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="slide5" class="slide team">
+        <div class="team-img-area">
+          <img src="images/team-kia-background-img.png" alt="" id="slide5-back-img">
+          <img src="images/logo-kia.svg" alt="" id="team-logo">
+          <h1 id="team-name">KIA 타이거즈</h1>
+          <div class="btn-wrap">
+            <a href="#none" class="commonBtn team-homepage" id="team-homepage">
+              <span>구단 공식 홈페이지</span>
+            </a>
+            <a href="#none" class="commonBtn team-sns" id="team-sns">
+              <span>구단 SNS</span>
+            </a>
+          </div>
+        </div>
+        <div class="team-inner">
+          <div class="soori-box" id="soori-box">
+            <div class="box" id="box1" data-color="red">
+              <img src="images/team-kia-mascot.png" alt="">
+              <div class="text-wrap">
+                <h2>KIA 타이거즈</h2>
+                <h6>압도하라_Always KIA TIGERS : 2024</h6>
+              </div>
+            </div>
+            <div class="box" id="box2" data-color="blue">
+              <img src="images/team-samsung-mascot.jpg" alt="">
+              <div class="text-wrap">
+                <h2>삼성 라이온즈</h2>
+                <h6>WIN OR WOW : 2024</h6>
+              </div>
+            </div>
+            <div class="box" id="box3" data-color="palevioletred">
+              <img src="images/team-lg-mascot.jpg" alt="">
+              <div class="text-wrap">
+                <h2>LG 트윈즈</h2>
+                <h6>무적 LG! 끝까지 TWINS! : 2024</h6>
+              </div>
+            </div>
+            <div class="box" id="box4" data-color="midnightblue">
+              <img src="images/team-doosan-mascot.jpg" alt="">
+              <div class="text-wrap">
+                <h2>두산 베어스</h2>
+                <h6>247 TEAM DOOSAN : 2024</h6>
+              </div>
+            </div>
+            <div class="box" id="box5" data-color="black">
+              <img src="images/team-kt-mascot.jpg" alt="">
+              <div class="text-wrap">
+                <h2>KT 위즈</h2>
+                <h6>WINNING KT : 2024</h6>
+              </div>
+            </div>
+            <div class="box" id="box6" data-color="goldenrod">
+              <img src="images/team-ssg-mascot.jpg" alt="">
+              <div class="text-wrap">
+                <h2>SSG 랜더스</h2>
+                <h6>NO LIMITS, AMAZING LANDERS : 2024</h6>
+              </div>
+            </div>
+            <div class="box" id="box7" data-color="steelblue">
+              <img src="images/team-lotte-mascot.jpg" alt="">
+              <div class="text-wrap">
+                <h2>롯데 자이언츠</h2>
+                <h6>투혼투지 : 2024</h6>
+              </div>
+            </div>
+            <div class="box" id="box8" data-color="orangered">
+              <img src="images/team-hanwha-mascot.png" alt="">
+              <div class="text-wrap">
+                <h2>한화 이글수리</h2>
+                <h6>DIFFERENT US : 2024</h6>
+              </div>
+            </div>
+            <div class="box" id="box9" data-color="peachpuff">
+              <img src="images/team-nc-mascot.jpg" alt="">
+              <div class="text-wrap">
+                <h2>NC 다이노스</h2>
+                <h6>THE ROAD TO GREATNESS : 2024</h6>
+              </div>
+            </div>
+            <div class="box" id="box10" data-color="deeppink">
+              <img src="images/team-kiwoom-mascot.jpg" alt="">
+              <div class="text-wrap">
+                <h2>키움 히어로즈</h2>
+                <h6>영웅질주 키움승리 : 2024</h6>
+              </div>
+            </div>
+            <div class="box" id="box11" data-color="darkseagreen">
+              <div class="sns-wrap">
+                <div class="naverTV sns-area"></div>
+                <div class="vertical-line top one"></div>
+                <div class="horizontal-line top"></div>
+                <div class="kakaoTV sns-area"></div>
+                <div class="vertical-line top two"></div>
+                <div class="naver sns-area"></div>
+                <div class="instagram sns-area"><div class="img-box"></div></div>
+                <div class="vertical-line middle three"></div>
+                <div class="horizontal-line bottom"></div>
+                <div class="youtube sns-area"></div>
+                <div class="vertical-line middle four"></div>
+                <div class="tictok sns-area"></div>
+                <div class="facebook sns-area"></div>
+                <div class="vertical-line bottom five"></div>
+                <div class="kbo-logo sns-area"></div>
+              </div>
+            </div>
+          </div>
+          <div class="sideGradientright"></div>
+        </div>
+      </section>
+      <section id="slide6" class="slide shop">
+        <div class="shop-wrap">
+          <div class="shop-left">
+            <div class="content-wrap">
+              <div class="item-content" id="item-content">
+                <span class="change-gold">
+                  <em class="change-black">[PRO-SPECS]</em><br>
+                  <b class="change-black">야구대표팀 점퍼</b><br>
+                  ￦249,000
+                </span>
+                <span class="change-gold">
+                  <em class="change-black">[KBO-2024-11월호]</em><br>
+                  <b class="change-black">월간 기념구</b><br>
+                  ￦12,000
+                </span>
+                <span class="change-gold">
+                  <em class="change-black">[TEAM KOREA]</em><br>
+                  <b class="change-black">PVC 글러브</b><br>
+                  ￦32,000
+                </span>
+                <span class="change-gold">
+                  <em class="change-black">[PRO-SPECS]</em><br>
+                  <b class="change-black">2024 야구대표팀 모자</b><br>
+                  ￦39,000
+                </span>
+              </div>
+            </div>
+            <a href="#none" class="commonBtn">
+              <span id="shop-btn">BUY NOW</span>
+            </a>
+          </div>
+          <div class="shop-center">
+            <div class="img-wrap" id="img-wrap">
+              <img src="images/shop-jacket.png" alt="">
+              <img src="images/shop-baseball.png" alt="">
+              <img src="images/shop-glove.png" alt="">
+              <img src="images/shop-cap.png" alt="">
+            </div>
+          </div>
+          <div class="shop-right">
+            <p id="item01" class="change-black"><em>01</em>야구대표팀 점퍼</p>
+            <p id="item02" class="change-black"><em>02</em>월간 기념구 11월호</p>
+            <p id="item03" class="change-black"><em>03</em>PVC 글러브</p>
+            <p id="item04" class="change-black"><em>04</em>2024 야구대표팀 모자</p>
+          </div>
+        </div>
+      </section>
+      <footer id="footer" class="footer"></footer>
+    </div>
+  </div>
+  <script src="script/script.js"></script>
+</body>
+</html>
