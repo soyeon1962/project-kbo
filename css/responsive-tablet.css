@@ -768,6 +768,7 @@ html {
     transform: unset;
     position: relative;
     left: 0;
+    margin-top: 3.255208333vw;
   }
   .kbo-container .full-page-slider-container section.shop .shop-wrap .shop-center .img-wrap {
     gap: 46.09375vw;
