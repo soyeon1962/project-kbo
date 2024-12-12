@@ -76,6 +76,18 @@ html {
     padding: 0 30px;
     overflow: hidden;
   }
+  header::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: inherit;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+  }
   header .web-nav {
     display: none;
   }
@@ -849,5 +861,218 @@ html {
     margin-top: 0;
     margin-right: 2.473958333vw;
     font-size: 2.34375vw;
+  }
+  /* ##################introduce.html################## */
+  body.sub-body section.introduce-container {
+    width: 100vw;
+  }
+  body.sub-body section.introduce-container .introduce-inner {
+    width: 708px;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .option-wrap .option-left {
+    gap: 10px;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .option-wrap .option-left > div:nth-child(odd) {
+    width: 150px;
+    font-size: 16px;
+    padding: 0 15px;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .option-wrap .option-left > div:nth-child(even) {
+    width: 150px;
+    font-size: 16px;
+    padding: 0 15px;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .option-wrap .option-left .position-option-value-wrap {
+    left: 160px;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .option-wrap .option-right input {
+    width: 271px;
+    font-weight: 300;
+    padding: 0 15px;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap {
+    margin-top: 70px;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card {
+    width: 216px;
+    height: 324px;
+    border-radius: 13.5px;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-front {
+    width: 100%;
+    height: 100%;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-front h1 {
+    font-size: 90px;
+    top: 8px;
+    left: 18px;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-front h5 {
+    font-size: 18px;
+    left: 17px;
+    bottom: 58.5px;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-front h2 {
+    font-size: 36px;
+    left: 17px;
+    bottom: 15px;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back {
+    width: 100%;
+    height: 100%;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back .blur-background {
+    width: 100%;
+    height: 100%;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back .blur-background h2 {
+    font-size: 32px;
+    top: 27px;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back .blur-background h1 {
+    font-size: 72px;
+    top: 60px;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back .blur-background .text-box {
+    width: 187px;
+    height: 91px;
+    font-size: 14px;
+    gap: 6px;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back .blur-background .text-box span:nth-child(2) em {
+    width: 27px;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back .blur-background .text-box span:nth-child(3) em {
+    width: 7px;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back .blur-background .team-mini-logo {
+    height: 35px;
+    right: 15px;
+    bottom: 20px;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.hanwha .team-logo {
+    height: 155px;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.kia .team-logo, body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.samsung .team-logo, body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.lotte .team-logo, body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.nc .team-logo {
+    height: 184px;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.lg .team-logo, body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.doosan .team-logo, body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.kt .team-logo, body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.ssg .team-logo, body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.kiwoom .team-logo {
+    height: 212px;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .player {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  /* ##################weather.html################## */
+  .sub-body .weather-container {
+    padding-top: 100px;
+  }
+  .sub-body .weather-container .select-team {
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7.8125vw;
+    margin-bottom: 0;
+  }
+  .sub-body .weather-container .select-team > div {
+    width: 10.41666vw;
+  }
+  .sub-body .weather-container .box-wrap {
+    width: 100vw;
+    padding: 30px 60px;
+  }
+  .sub-body .weather-container .box-wrap [class*=inner] {
+    width: calc(100vw - 120px);
+  }
+  .sub-body .weather-container .box-wrap #address b {
+    font-size: 14px;
+  }
+  .sub-body .weather-container .box-wrap #address span {
+    font-size: 14px;
+  }
+  .sub-body .weather-container .box-wrap .box-index-wrap {
+    left: 26px;
+  }
+  .sub-body .weather-container .box-wrap .box-index-wrap .box-index {
+    font-size: 16px;
+    padding: 25px 10px;
+  }
+  .sub-body .weather-container .box-wrap .box-index-wrap .box-index:nth-child(2) {
+    top: 75px;
+  }
+  .sub-body .weather-container .box-wrap .box-index-wrap .box-index:nth-child(3) {
+    top: 190px;
+  }
+  .sub-body .weather-container .box-wrap .box-info.weather-inner {
+    padding: 50px 40px 30px 40px;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .sub-body .weather-container .box-wrap .box-info.weather-inner .weather-info .date-temperature {
+    margin-bottom: 20px;
+  }
+  .sub-body .weather-container .box-wrap .box-info.weather-inner .weather-info .date-temperature .weather-temperature {
+    font-size: 48px;
+  }
+  .sub-body .weather-container .box-wrap .box-info.weather-inner .weather-info .date-temperature .weather-description {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .sub-body .weather-container .box-wrap .box-info.weather-inner .weather-tab {
+    gap: 40px;
+    font-size: 20px;
+  }
+  .sub-body .weather-container .box-wrap .box-info.weather-inner .weather-detail {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sub-body .weather-container .box-wrap .box-info.weather-inner .weather-detail .weather-each {
+    flex: none;
+    width: 33%;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .sub-body .weather-container .box-wrap .box-info.weather-inner .weather-detail .weather-each img {
+    width: 100px;
+  }
+  .sub-body .weather-container .box-wrap .box-info.map-inner {
+    top: 80px;
+    height: 656px;
+  }
+  .sub-body .weather-container .box-wrap .box-info.detail-inner {
+    top: 80px;
+    height: 656px;
+  }
+  .sub-body .weather-container .description-inner {
+    width: 100%;
+    padding: 60px;
+  }
+  .sub-body .weather-container .description-inner .description-wrap p {
+    font-size: 14px;
+  }
+  .sub-body .weather-container .description-inner .description-wrap .logo-images {
+    gap: 0;
+  }
+}
+@media (max-width: 501px) {
+  .sub-body .weather-container .box-wrap #address {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .sub-body .weather-container .box-wrap .box-info.weather-inner .weather-detail .weather-each {
+    width: 50%;
+  }
+  .sub-body .weather-container .box-wrap .box-info.weather-inner .weather-detail .weather-each:last-child {
+    display: none;
+  }
+  .sub-body .weather-container .box-wrap .box-info.map-inner {
+    top: 107px;
+  }
+  .sub-body .weather-container .box-wrap .box-info.detail-inner {
+    top: 107px;
   }
 }/*# sourceMappingURL=responsive-tablet.css.map */
