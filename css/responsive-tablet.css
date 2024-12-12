@@ -67,7 +67,7 @@ html {
 }
 
 /*Responsive for Tablet*/
-@media (max-width: 768px) and (min-width: 421px) {
+@media (max-width: 1024px) and (min-width: 421px) {
   body {
     overflow-x: hidden;
   }
