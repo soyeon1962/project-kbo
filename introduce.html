@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>KBO 선수소개</title>
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive-tablet.css">
+  <link rel="stylesheet" href="css/responsive-mobile.css">
+</head>
+<body class="sub-body">
+  <header id="header"></header>
+  <section class="introduce-container">
+    <div class="top-back-img">
+      <div class="img-area"></div>
+      <div class="gradient-box"></div>
+    </div>
+    <div class="introduce-inner">
+      <div class="content-box">
+        <div class="option-wrap">
+          <div class="option-left">
+            <div class="team-option" id="team-option">팀 선택</div>
+            <div class="team-option-value-wrap" id="team-option-value">
+              <div class="team-option-value" data-team="all" data-teamname="팀 선택"> 전체 선택</div>
+              <div class="team-option-value" data-team="kia" data-teamname="KIA">KIA</div>
+              <div class="team-option-value" data-team="samsung" data-teamname="삼성">삼성</div>
+              <div class="team-option-value" data-team="lg" data-teamname="LG">LG</div>
+              <div class="team-option-value" data-team="doosan" data-teamname="두산">두산</div>
+              <div class="team-option-value" data-team="kt" data-teamname="KT">KT</div>
+              <div class="team-option-value" data-team="ssg" data-teamname="SSG">SSG</div>
+              <div class="team-option-value" data-team="lotte" data-teamname="롯데">롯데</div>
+              <div class="team-option-value" data-team="hanwha" data-teamname="한화">한화</div>
+              <div class="team-option-value" data-team="nc" data-teamname="NC">NC</div>
+              <div class="team-option-value" data-team="kiwoom" data-teamname="키움">키움</div>
+            </div>
+            <div class="position-option" id="position-option">포지션 선택</div>
+            <div class="position-option-value-wrap" id="position-option-value">
+              <div class="position-option-value" data-position="포지션 선택">전체 선택</div>
+              <div class="position-option-value" data-position="투수">투수</div>
+              <div class="position-option-value" data-position="포수">포수</div>
+              <div class="position-option-value" data-position="내야수">내야수</div>
+              <div class="position-option-value" data-position="외야수">외야수</div>
+            </div>
+          </div>
+          <div class="option-right">
+            <input type="text" placeholder="선수명을 입력하세요." id="search-player"><i class="bi bi-search" id="search-btn"></i>
+          </div>
+        </div>
+        <div class="card-wrap" id="card-wrap">
+          <!--card 추가 구역-->
+        </div>
+        <a href="#none" class="more-btn-area">
+          <span class="more-btn" id="more-btn">더보기</span>
+        </a>
+      </div>
+    </div>
+    <footer id="footer" class="footer"></footer>
+  </section>
+  <script src="script/introduce.js"></script>
+</body>
+</html>

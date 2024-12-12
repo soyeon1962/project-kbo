@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>KBO 리뉴얼 홈페이지 - 야구장 날씨</title>
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive-tablet.css">
+  <link rel="stylesheet" href="css/responsive-mobile.css">
+  <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ibr9xh722u"></script>
+</head>
+<body class="sub-body">
+  <header id="header"></header>
+  <section class="weather-container">
+    <div class="select-team">
+      <div class="select-team-kia active" data-team="kia">
+        <span>KIA</span>
+        <img src="images/logo-kia.svg" alt="KIA">
+      </div>
+      <div class="select-team-samsung" data-team="samsung">
+        <span>삼성</span>
+        <img src="images/logo-samsung.svg" alt="삼성">
+      </div>
+      <div class="select-team-lg" data-team="lg">
+        <span>LG</span>
+        <img src="images/logo-lg.svg" alt="LG">
+      </div>
+      <div class="select-team-doosan" data-team="doosan">
+        <span>두산</span>
+        <img src="images/logo-doosan.svg" alt="두산">
+      </div>
+      <div class="select-team-kt" data-team="kt">
+        <span>KT</span>
+        <img src="images/logo-kt.svg" alt="KT">
+      </div>
+      <div class="select-team-ssg" data-team="ssg">
+        <span>SSG</span>
+        <img src="images/logo-ssg.svg" alt="SSG">
+      </div>
+      <div class="select-team-lotte" data-team="lotte">
+        <span>롯데</span>
+        <img src="images/logo-lotte.svg" alt="롯데">
+      </div>
+      <div class="select-team-hanwha" data-team="hanwha">
+        <span>한화</span>
+        <img src="images/logo-hanwha.svg" alt="한화">
+      </div>
+      <div class="select-team-nc" data-team="nc">
+        <span>NC</span>
+        <img src="images/logo-nc.svg" alt="NC">
+      </div>
+      <div class="select-team-kiwoom" data-team="kiwoom">
+        <span>키움</span>
+        <img src="images/logo-kiwoom.svg" alt="키움">
+      </div>
+    </div>
+    <div class="box-wrap">
+      <div id="address">
+        <b>광주-기아 챔피언스 필드</b>
+        <span>광주광역시 북구 서림로 10</span>
+      </div>
+      <div class="box-index-wrap">
+        <div class="box-index active">날씨</div>
+        <div class="box-index">위치안내</div>
+        <div class="box-index">상세안내</div>
+      </div>
+      <div class="box-info weather-inner active">
+        <div class="weather-info">
+        </div>
+        <div class="weather-tab">
+          <div class="today-tab active">TODAY</div>
+          <div class="weekly-tab">WEEKLY</div>
+        </div>
+        <div class="weather-detail active" id="today">
+        </div>
+        <div class="weather-detail" id="weekly">
+        </div>
+      </div>
+      <div class="box-info map-inner">
+        <div id="map"></div>
+      </div>
+      <div class="box-info detail-inner">
+        <div class="detail-wrap">
+          <h3>🚌광천동 유스퀘어 광주종합버스터미널 → 광주-기아 챔피언스 필드 정문(시외버스 및 고속버스 이용시)</h3>
+          <div class="detail-item">
+            <span class="category">버스</span>
+            <p>
+              1) 매월26, 일곡38, 송암47, 상무64번 승차 → 제2광천교 정류장 하차 → 도보로 6분 이동(총 13분 소요)
+              <br>
+              2) 매월16 승차 → 광주-기아 챔피언스 필드 정문 정류장 하차 → 도보로 3분 이동(총 12분 소요)
+              <br>
+              3) 용전84 승차 → 임동주공아파트 정류장 하차 → 도보로 5분 이동(총 12분 소요)
+            </p>
+          </div>
+          <div class="detail-item">
+            <span class="category">택시</span>
+            <p>
+              유스퀘어 택시 승강장 승차 → 챔피언스필드 정문 하차(5분 소요)
+            </p>
+          </div>
+        </div>
+        <div class="detail-wrap">
+          <h3>🚄광주송정역 → 광주-기아 챔피언스 필드 정문(KTX 및 SRT 이용시)</h3>
+          <div class="detail-item">
+            <span class="category">버스</span>
+            <p>
+              광주송정역 정류장 송정98 승차 → 무등야구장 정류장 하차(챔피언스필드 후문쪽) → 도보로 5분 이동(정문)
+            </p>
+          </div>
+          <div class="detail-item">
+            <span class="category">지하철</span>
+            <p>
+              1) 광주송정역 4번 출구까지 도보 이동(3분 소요) → 광주송정역 1호선 녹동방면 지하철 승차 → 화정역 하차 → 4번 출구로 나와서 화정현대아파트 정류장까지 도보 이동(5분 소요) → 매월 26 승차 → 제2광천교 정류장 하차 → 도보 6분 이동(총 37분 소요)
+              <br>
+              2) 광주송정역 4번 출구까지 도보 이동(3분 소요) → 광주송정역 1호선 녹동방면 지하철 승차 → 쌍촌역 하차 → 4번 출구로 나와서 상무1동행정복지센터 정류장까지 도보 이동(4분 소요) → 송암47 승차 → 제2광천교 정류장 하차 → 도보 6분 이동(총 36분 소요)
+              광주송정역 → 농성역 하차 → 택시 이용
+            </p>
+          </div>
+          <div class="detail-item">
+            <span class="category">택시</span>
+            <p>
+              광주송정역 택시 승강장 승차 → 챔피언스필드 정문 하차(30분 소요)
+            </p>
+          </div>
+        </div>
+        <div class="detail-wrap">
+          <h3>🛫광주공항 → 광주-기아 챔피언스 필드 정문(비행기 이용시)</h3>
+          <div class="detail-item">
+            <span class="category">버스</span>
+            <p>
+              공항역 정류장 일곡38 승차 → 제2광천교 정류장 하차 → 도보 6분 이동(총 50분 소요)
+            </p>
+          </div>
+          <div class="detail-item">
+            <span class="category">지하철</span>
+            <p>
+              공항역 승차 후 KTX 및 SRT 이용 시와 같음
+            </p>
+          </div>
+          <div class="detail-item">
+            <span class="category">택시</span>
+            <p>
+              광주공항 택시 승강장 승차 → 챔피언스필드 정문 하차(25분 소요)
+            </p>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div class="description-inner">
+      <h3>날씨 및 미세먼지 설명</h3>
+      <div class="description-wrap">
+        <p>
+          1. 00:00~ 경기시작시간 사이 접속 시<br>
+          -날씨, 기온, 강수확률 기준은 경기 시작시간의 각 구장 기상 예보가 표기됩니다.
+        </p>
+        <p>
+          2. 경기시작시간 ~ 23:59 사이 접속 시<br>
+          -날씨, 기온 기준은 접속 시간 기준 현재의 각 구장 기상 예뽀가 표기됩니다.
+          -강수확률 기준은 접속 시간 기준의 한 시간 뒤의 각 구장 기상 예보가 표기됩니다.
+        </p>
+        <p>
+          3. (초)미세먼지는 접속 시점 구분 없이 현재의 각 구장 정보가 표기됩니다.<br>
+          -날씨, 기온, 강수확률 기준은 경기 시작시간의 각 구장 기상 예보가 표기됩니다.
+        </p>
+        <p>
+          4. 표출되는 (초)미세먼지 정보는 미세먼지(PM10)와 초미세먼지(PM2.5)중 더 낮은 등급의 정보를 기준으로 표기됩니다.<br>
+          ※단, 미세먼지와 초미세먼지의 등급이 같을 경우 미세먼지 등급이 표기됩니다.
+        </p>
+        <div class="logo-images">
+          <img src="images/logo-mcst.svg" alt="문화체육관광부">
+          <img src="images/logo-kspo.svg" alt="문화체육관광부">
+        </div>
+        <p>
+          ※ 본 사업은 문화체육관광부와 국민체육진흥공단의 재정 후원을 받았습니다.<br>
+          ※ 미세먼지 정보는 환경부 성능인증 1등급 간이측정기로 측정되었으며, 대기환경보전법에 따른 측정망을 통해 측정된 자료가 아닙니다.
+        </p>
+      </div>
+    </div>
+    <footer id="footer" class="footer"></footer>
+  </section>
+  <script src="script/weather.js"></script>
+</body>
+</html>
