@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>KBO 선수소개</title>
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive-tablet.css">
+  <link rel="stylesheet" href="css/responsive-mobile.css">
+</head>
+<body class="sub-body">
+  <header id="header"></header>
+  <div class="small-side-nav" id="small-side-nav"></div>
+  <div class="side-nav" id="side-nav">
+    <ul>
+      <h2>일정 · 결과</h2>
+      <li><a href="#none">경기일정 · 결과</a></li>
+      <li><a href="#none">게임센터</a></li>
+      <li><a href="#none">스코어보드</a></li>
+      <li><a href="#none">올스타전</a></li>
+      <li><a href="#none">국제대회</a></li>
+      <li><a href="#none">야구장 날씨</a></li>
+    </ul>
+  </div>
+  <section class="calendar-container">
+    <div class="top-back-img">
+      <div class="img-area"></div>
+      <div class="gradient-box"></div>
+    </div>
+    <div class="calendar-inner">
+      <div class="content-box">
+      <div class="calendar-header">
+        <button id="prevBtn"></button>
+        <h2 id="currentMonth"></h2>
+        <button id="nextBtn"></button>
+      </div>
+        <div class="calendar-days">
+          <div class="day">일</div>
+          <div class="day">월</div>
+          <div class="day">화</div>
+          <div class="day">수</div>
+          <div class="day">목</div>
+          <div class="day">금</div>
+          <div class="day">토</div>
+        </div>
+        <div class="calendar-dates" id="calendarDates"></div>
+        <div class="circle-wrap">
+          <span>정상경기</span>
+          <span>취소경기</span>
+        </div>
+        <div id="selectedDateDetails" class="selected-date-details"></div>
+      </div>
+    </div>
+    <footer id="footer" class="footer"></footer>
+  </section>
+  <script src="script/calendar.js"></script>
+</body>
+</html>
