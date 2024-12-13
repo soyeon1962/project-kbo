@@ -1,6 +1,10 @@
 /*Import Local Scss Files*/
 /* Font Icon : Bootstrap Icons */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+/* Fontawesome 6.6 */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+/* XEICON CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
 @font-face {
   font-family: "KBODiaGothic";
   font-weight: 700;
@@ -67,7 +71,7 @@ html {
 }
 
 /*Responsive for Tablet*/
-@media (max-width: 1024px) and (min-width: 421px) {
+@media (max-width: 768px) and (min-width: 421px) {
   body {
     overflow-x: hidden;
   }
@@ -866,56 +870,63 @@ html {
   body.sub-body section.introduce-container {
     width: 100vw;
   }
+  body.sub-body section.introduce-container .top-back-img .img-area {
+    height: 65.1041666667vw;
+  }
+  body.sub-body section.introduce-container .top-back-img .gradient-box {
+    height: 65.1041666667vw;
+  }
   body.sub-body section.introduce-container .introduce-inner {
-    width: 708px;
+    width: 92.1875vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .option-wrap .option-left {
-    gap: 10px;
+    gap: 1.302083333vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .option-wrap .option-left > div:nth-child(odd) {
-    width: 150px;
-    font-size: 16px;
-    padding: 0 15px;
+    width: 19.53125vw;
+    font-size: 2.0833333vw;
+    padding: 0 1.953125vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .option-wrap .option-left > div:nth-child(even) {
-    width: 150px;
-    font-size: 16px;
-    padding: 0 15px;
+    width: 19.53125vw;
+    font-size: 2.0833333vw;
+    padding: 0 1.953125vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .option-wrap .option-left .position-option-value-wrap {
-    left: 160px;
+    left: 20.83333333vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .option-wrap .option-right input {
-    width: 271px;
+    width: 35.2864583333vw;
     font-weight: 300;
-    padding: 0 15px;
+    padding: 0 1.953125vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap {
-    margin-top: 70px;
+    margin-top: 9.1145833333vw;
+    gap: 2.34375vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card {
-    width: 216px;
-    height: 324px;
-    border-radius: 13.5px;
+    width: 28.125vw;
+    height: 42.1875vw;
+    border-radius: 1.7578125vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-front {
     width: 100%;
     height: 100%;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-front h1 {
-    font-size: 90px;
-    top: 8px;
-    left: 18px;
+    font-size: 11.71875vw;
+    top: 1.04166666vw;
+    left: 2.34375vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-front h5 {
-    font-size: 18px;
-    left: 17px;
-    bottom: 58.5px;
+    font-size: 2.34375vw;
+    left: 2.2135416666vw;
+    bottom: 7.6171875vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-front h2 {
-    font-size: 36px;
-    left: 17px;
-    bottom: 15px;
+    font-size: 4.6875vw;
+    left: 2.2135416666vw;
+    bottom: 2.0833333vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back {
     width: 100%;
@@ -926,38 +937,39 @@ html {
     height: 100%;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back .blur-background h2 {
-    font-size: 32px;
-    top: 27px;
+    font-size: 4.16666666vw;
+    top: 3.515625vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back .blur-background h1 {
-    font-size: 72px;
-    top: 60px;
+    font-size: 9.375vw;
+    top: 7.8125vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back .blur-background .text-box {
-    width: 187px;
-    height: 91px;
-    font-size: 14px;
-    gap: 6px;
+    width: 24.3489583333vw;
+    height: 11.8486583333vw;
+    font-size: 1.822916666vw;
+    gap: 0.78125vw;
+    top: 19.53125vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back .blur-background .text-box span:nth-child(2) em {
-    width: 27px;
+    width: 3.515625vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back .blur-background .text-box span:nth-child(3) em {
-    width: 7px;
+    width: 0.9114583333vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back .blur-background .team-mini-logo {
-    height: 35px;
-    right: 15px;
-    bottom: 20px;
+    height: 4.5572916666vw;
+    right: 3.57142857vw;
+    bottom: 2.604166666vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.hanwha .team-logo {
-    height: 155px;
+    height: 20.182291666vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.kia .team-logo, body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.samsung .team-logo, body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.lotte .team-logo, body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.nc .team-logo {
-    height: 184px;
+    height: 23.958333vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.lg .team-logo, body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.doosan .team-logo, body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.kt .team-logo, body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.ssg .team-logo, body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.kiwoom .team-logo {
-    height: 212px;
+    height: 27.6041666vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .player {
     width: 100%;

@@ -1,6 +1,10 @@
 /*Import Local Scss Files*/
 /* Font Icon : Bootstrap Icons */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+/* Fontawesome 6.6 */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+/* XEICON CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
 @font-face {
   font-family: "KBODiaGothic";
   font-weight: 700;
@@ -951,15 +955,117 @@ html {
   body.sub-body section.introduce-container {
     width: 100vw;
   }
+  body.sub-body section.introduce-container .top-back-img .img-area {
+    height: 72.857142857vw;
+  }
+  body.sub-body section.introduce-container .top-back-img .gradient-box {
+    height: 72.857142857vw;
+  }
   body.sub-body section.introduce-container .introduce-inner {
-    width: 360px;
+    width: 85.7142857143vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .option-wrap {
     flex-direction: column;
-    gap: 16px;
+    gap: 3.80952381vw;
   }
   body.sub-body section.introduce-container .introduce-inner .content-box .option-wrap .option-left {
-    gap: 20px;
+    gap: 4.761904762vw;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .option-wrap .option-left > div:nth-child(odd) {
+    width: 40.4761904762vw;
+    font-size: 3.3333333333vw;
+    padding: 0 3.57142857vw;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .option-wrap .option-left > div:nth-child(even) {
+    width: 40.4761904762vw;
+    font-size: 3.3333333333vw;
+    padding: 0 3.57142857vw;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .option-wrap .option-left .position-option-value-wrap {
+    left: 45.2380952381vw;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .option-wrap .option-right input {
+    width: 85.7142857143vw;
+    font-size: 3.3333333333vw;
+    font-weight: 300;
+    padding: 0 3.57142857vw;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap {
+    margin-top: 8.0952381vw;
+    gap: 1.85vw;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card {
+    width: 41.904762vw;
+    height: 58.5714285714vw;
+    border-radius: 2.61904762vw;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-front {
+    width: 100%;
+    height: 100%;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-front h1 {
+    font-size: 17.380952381vw;
+    top: 1.42857143vw;
+    left: 3.57142857vw;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-front h5 {
+    font-size: 3.3333333333vw;
+    left: 3.3333333333vw;
+    bottom: 11.1904762vw;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-front h2 {
+    font-size: 7.142857143vw;
+    left: 3.3333333333vw;
+    bottom: 2.857142857vw;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back {
+    width: 100%;
+    height: 100%;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back .blur-background {
+    width: 100%;
+    height: 100%;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back .blur-background h2 {
+    font-size: 6.1904762vw;
+    top: 5.2380952381vw;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back .blur-background h1 {
+    font-size: 13.80952381vw;
+    top: 11.42857143vw;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back .blur-background .text-box {
+    width: 36.42857143vw;
+    height: 17.61904762vw;
+    font-size: 2.857142857vw;
+    gap: 1.1904762vw;
+    top: 28.333333333vw;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back .blur-background .text-box span:nth-child(2) em {
+    width: 5.4761904762vw;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back .blur-background .text-box span:nth-child(3) em {
+    width: 1.42857143vw;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .card-back .blur-background .team-mini-logo {
+    height: 6.6666666667vw;
+    right: 2.857142857vw;
+    bottom: 3.80952381vw;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.hanwha .team-logo {
+    height: 30vw;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.kia .team-logo, body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.samsung .team-logo, body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.lotte .team-logo, body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.nc .team-logo {
+    height: 35.7142857143vw;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.lg .team-logo, body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.doosan .team-logo, body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.kt .team-logo, body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.ssg .team-logo, body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card.kiwoom .team-logo {
+    height: 41.1904762vw;
+  }
+  body.sub-body section.introduce-container .introduce-inner .content-box .card-wrap .card .player {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   /* ##################weather.html################## */
   .sub-body .weather-container {
@@ -1102,4 +1208,5 @@ html {
   .sub-body .weather-container .description-inner .description-wrap .logo-images img {
     width: 50%;
   }
+  /* ##################news.html################## */
 }/*# sourceMappingURL=responsive-mobile.css.map */
