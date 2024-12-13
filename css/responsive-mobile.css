@@ -1381,11 +1381,13 @@ html {
   }
   /* ##################리모콘################## */
   .small-side-nav {
+    display: block;
     width: 31px;
     height: 105px;
+    z-index: 10000000;
   }
   .small-side-nav.active {
-    right: 39%;
+    right: 159px;
   }
   .small-side-nav::after {
     width: 22px;
