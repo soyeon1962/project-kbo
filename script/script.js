@@ -769,11 +769,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
   
   leftButton.addEventListener('click', () => {
-    rotateCards.moveLeft();
+    rotateCards.moveRight();
   });
   
   rightButton.addEventListener('click', () => {
-    rotateCards.moveRight();
+    rotateCards.moveLeft();
   });
 });
 

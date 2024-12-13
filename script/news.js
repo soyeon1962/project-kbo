@@ -2,13 +2,12 @@
 document.addEventListener('DOMContentLoaded', () => {
   const smallSideNav = document.getElementById('small-side-nav');
   const sideNav = document.getElementById('side-nav');
-  let sideNavHeight = sideNav.offsetHeight
-  console.log(sideNavHeight)
+  let sideNavHeight = sideNav.offsetHeight;
 
   smallSideNav.style.top = `calc(20% + ${sideNavHeight/2}px)`
 
   smallSideNav.addEventListener('click', () => {
-    if (window.innerWidth <= 768) {  
+    if (window.matchMedia("(max-width: 768px)").matches) {  
       if (sideNav.classList.contains('active')) {
         sideNav.classList.remove('active');
         smallSideNav.classList.remove('active');
