@@ -3724,19 +3724,20 @@ body.news .news-wrap .news-inner .news-sec3 a::after {
 .small-side-nav {
   width: 39px;
   height: 130px;
-  background-color: #3e4041;
+  background: #373839;
   border-radius: 20px 0 0 20px;
   position: fixed;
-  top: 28%;
   right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   cursor: pointer;
   z-index: 11;
   display: none;
-  -webkit-transition: right 0.31s ease;
-  transition: right 0.31s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .small-side-nav.active {
-  right: 21.2%;
+  right: 159px;
 }
 .small-side-nav::after {
   position: absolute;
@@ -3747,7 +3748,7 @@ body.news .news-wrap .news-inner .news-sec3 a::after {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background: url(images/sub-hamburger.png);
+  background: url(../images/sub-hamburger.png);
 }
 
 .side-nav {

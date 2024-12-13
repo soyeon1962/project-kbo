@@ -1349,7 +1349,7 @@ html {
   }
   .side-nav {
     width: 159px;
-    right: -40%;
+    right: -159px;
     border-radius: 10px 0 0 10px;
   }
 }
