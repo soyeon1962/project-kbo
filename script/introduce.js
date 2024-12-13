@@ -70,6 +70,29 @@ fetch("html/header.html")
 })
 .catch(error => console.log("header is wrong", error));
 
+
+//####################리모콘###################//
+document.addEventListener('DOMContentLoaded', () => {
+  const smallSideNav = document.getElementById('small-side-nav');
+  const sideNav = document.getElementById('side-nav');
+  let sideNavHeight = sideNav.offsetHeight
+  console.log(sideNavHeight)
+
+  smallSideNav.style.top = `calc(20% + ${sideNavHeight/2}px)`
+
+  smallSideNav.addEventListener('click', () => {
+    if (window.innerWidth <= 768) {  
+      if (sideNav.classList.contains('active')) {
+        sideNav.classList.remove('active');
+        smallSideNav.classList.remove('active');
+      } else {
+        sideNav.classList.add('active');
+        smallSideNav.classList.add('active');
+      }
+    }
+  });
+});
+
 //## main-content ##//
 window.addEventListener('DOMContentLoaded', function(){
 

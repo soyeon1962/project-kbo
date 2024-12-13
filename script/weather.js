@@ -71,6 +71,29 @@ fetch("html/header.html")
 .catch(error => console.log("header is wrong", error));
 
 
+//####################리모콘###################//
+document.addEventListener('DOMContentLoaded', () => {
+  const smallSideNav = document.getElementById('small-side-nav');
+  const sideNav = document.getElementById('side-nav');
+  let sideNavHeight = sideNav.offsetHeight
+  console.log(sideNavHeight)
+
+  smallSideNav.style.top = `calc(20% + ${sideNavHeight/2}px)`
+
+  smallSideNav.addEventListener('click', () => {
+    if (window.innerWidth <= 768) {  
+      if (sideNav.classList.contains('active')) {
+        sideNav.classList.remove('active');
+        smallSideNav.classList.remove('active');
+      } else {
+        sideNav.classList.add('active');
+        smallSideNav.classList.add('active');
+      }
+    }
+  });
+});
+
+
 //좌측 탭 클릭 시 active 추가
 // box-index 1번 - weather-inner
 // box-index 2번 - map-inner
@@ -110,7 +133,7 @@ let teams = [
 ];
 
 // 날씨용 전역 변수 선언
-const apiKey = "12ca11a2dd575958403d7b1896edb06c";
+const apiKey = "de9fb9286b8c0295445f16b49f8d46b9";
 const weatherDescKo = [
   { 201: '가벼운 비를 동반한 천둥구름' },
   { 200: '비를 동반한 천둥구름' },

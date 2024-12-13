@@ -1,6 +1,11 @@
+//####################리모콘###################//
 document.addEventListener('DOMContentLoaded', () => {
   const smallSideNav = document.getElementById('small-side-nav');
   const sideNav = document.getElementById('side-nav');
+  let sideNavHeight = sideNav.offsetHeight
+  console.log(sideNavHeight)
+
+  smallSideNav.style.top = `calc(20% + ${sideNavHeight/2}px)`
 
   smallSideNav.addEventListener('click', () => {
     if (window.innerWidth <= 768) {  
