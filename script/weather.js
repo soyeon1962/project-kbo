@@ -1,5 +1,5 @@
 //## section1 - header fetch ##//
-fetch("../html/header.html")
+fetch("html/header.html")
 .then(response => response.text())
 .then(data =>{
   document.getElementById('header').innerHTML = data;
@@ -1472,7 +1472,7 @@ var map = new naver.maps.Map('map', {
 
     //## footer fetch ##//
 
-fetch("../html/footer.html")
+fetch("html/footer.html")
 .then(response => response.text())
 .then(data => {
   document.getElementById('footer').innerHTML = data;
