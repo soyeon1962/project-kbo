@@ -110,7 +110,7 @@ let teams = [
 ];
 
 // 날씨용 전역 변수 선언
-const apiKey = "de9fb9286b8c0295445f16b49f8d46b9";
+const apiKey = "12ca11a2dd575958403d7b1896edb06c";
 const weatherDescKo = [
   { 201: '가벼운 비를 동반한 천둥구름' },
   { 200: '비를 동반한 천둥구름' },
