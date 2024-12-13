@@ -1379,6 +1379,110 @@ html {
     margin-right: 20px;
     font-size: 16px;
   }
+  /* ##################calendar.html################## */
+  .selected-date {
+    width: 43px !important;
+    height: 43px !important;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 0;
+    width: 31.6%;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-header #currentMonth {
+    text-align: center;
+    font-size: 36px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-header #nextBtn {
+    margin-right: 45px;
+    width: 10px;
+    height: 19px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-header #nextBtn::before {
+    font-size: 20px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-header #prevBtn {
+    margin-left: 45px;
+    width: 10px;
+    height: 19px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-header #prevBtn::before {
+    font-size: 20px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-days {
+    width: 31.6%;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-days .day {
+    font-size: 19px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates {
+    width: 31.6%;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates .date {
+    width: 43px;
+    height: 43px;
+    font-size: 19px;
+    margin-left: 4px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates .date::after {
+    display: none;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates .date .games {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates .date .games .status1-dot::before {
+    font-size: 3px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates .date .games .normalgame-dot::before {
+    font-size: 3px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .circle-wrap {
+    width: 31.6%;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .circle-wrap span {
+    font-size: 12px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .circle-wrap span:nth-child(1)::before {
+    font-size: 7px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .circle-wrap span:nth-child(2)::before {
+    font-size: 7px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .game-info {
+    width: 31.6%;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .game-info .status1 {
+    width: 60%;
+    font-size: 14px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .game-info .status1::before {
+    width: 14px;
+    height: 14px;
+    background-size: cover;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .game-info .normalgame {
+    width: 60%;
+    font-size: 14px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .game-info .normalgame::before {
+    width: 14px;
+    height: 14px;
+    background-size: cover;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .date-detail-wrap .date-heading .date-heading-day {
+    font-size: 36px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .date-detail-wrap .date-heading .date-heading-weekday {
+    font-size: 14px;
+    text-align: center;
+  }
   /* ##################리모콘################## */
   .small-side-nav {
     display: block;
