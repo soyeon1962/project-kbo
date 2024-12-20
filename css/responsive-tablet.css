@@ -1,6 +1,5 @@
 @charset "UTF-8";
-/*Import Local Scss Files*/
-/* Font Icon : Bootstrap Icons */
+/*Import Local Scss Files*/ /* Font Icon : Bootstrap Icons */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 /* Fontawesome 6.6 */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
@@ -72,6 +71,242 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 768px) {
+  /* ##################calendar################## */
+  .selected-date {
+    display: block;
+    color: #ffffff;
+    width: 100px;
+    height: 80px !important;
+    border-radius: 50%;
+    background-color: #B19F77;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box {
+    height: 1600px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 0;
+    width: 100vw;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-header #currentMonth {
+    text-align: center;
+    font-size: 80px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-header #nextBtn::before {
+    left: -800%;
+    font-size: 40px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-header #prevBtn::before {
+    right: -800%;
+    font-size: 40px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-days {
+    width: 100vw;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-days .day {
+    font-size: 36px;
+    font-weight: 500;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates {
+    width: 100vw;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates .date {
+    width: 86px;
+    height: 80px;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 4px;
+    padding: 7px 0 0 34px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates .date::after {
+    display: none;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates .date .games {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates .date .games .status1-dot {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 5px auto 0 auto;
+    position: absolute;
+    bottom: 5%;
+    left: 60%;
+    -webkit-transform: translateX(-60%);
+            transform: translateX(-60%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates .date .games .status1-dot::before {
+    content: "\f287";
+    font-family: "bootstrap-icons";
+    font-size: 5px;
+    color: #EA1E23;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates .date .games .normalgame-dot {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 5px auto 0 auto;
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates .date .games .normalgame-dot::before {
+    content: "\f287";
+    font-family: "bootstrap-icons";
+    font-size: 5px;
+    color: #06ACED;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .circle-wrap {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .circle-wrap span {
+    margin: 30px 50px 0 0;
+    font-size: 18px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .circle-wrap span:nth-child(1) {
+    position: relative;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .circle-wrap span:nth-child(1)::before {
+    content: "\f287";
+    position: absolute;
+    font-family: "bootstrap-icons";
+    font-size: 10px;
+    color: #06ACED;
+    left: -30%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .circle-wrap span:nth-child(2) {
+    position: relative;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .circle-wrap span:nth-child(2)::before {
+    content: "\f287";
+    position: absolute;
+    font-family: "bootstrap-icons";
+    font-size: 10px;
+    color: #EA1E23;
+    left: -30%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details {
+    margin-top: 90px;
+    display: block;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .game-info {
+    width: 100vw;
+    height: 300px;
+    display: inline-block;
+    position: relative;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .game-info .status1 {
+    width: 75%;
+    border: 2px solid #EA1E23;
+    text-align: left;
+    font-size: 20px;
+    padding: 25px 0 25px 65px;
+    border-radius: 10px;
+    margin: 20px 0 0 140px;
+    position: relative;
+    cursor: default;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .game-info .status1::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(../images/subcalendar-cancle.png);
+    top: 50%;
+    left: 5%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .game-info .normalgame {
+    width: 75%;
+    border: 2px solid #06ACED;
+    text-align: left;
+    font-size: 20px;
+    padding: 25px 0 25px 65px;
+    border-radius: 10px;
+    margin: 20px 0 0 140px;
+    position: relative;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .game-info .normalgame::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(../images/subcalendar-result.png);
+    top: 50%;
+    left: 5%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .date-detail-wrap {
+    width: 100px;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .date-detail-wrap .date-heading {
+    margin: 0 0 0 30px;
+    position: absolute;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .date-detail-wrap .date-heading .date-heading-day {
+    font-size: 50px;
+    font-weight: 500;
+  }
+  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .date-detail-wrap .date-heading .date-heading-weekday {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
 /*Responsive for Tablet*/
 @media (max-width: 768px) and (min-width: 421px) {
   body {
@@ -1342,237 +1577,6 @@ html {
   }
   body.news .news-wrap .news-inner .news-sec3 a::after {
     right: -5%;
-  }
-  /* ##################calendar################## */
-  .selected-date {
-    display: block;
-    color: #ffffff;
-    width: 100px;
-    height: 80px !important;
-    border-radius: 50%;
-    background-color: #B19F77;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .calendar-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: 0;
-    width: 58.5%;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .calendar-header #currentMonth {
-    text-align: center;
-    font-size: 80px;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .calendar-header #nextBtn::before {
-    left: -800%;
-    font-size: 40px;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .calendar-header #prevBtn::before {
-    right: -800%;
-    font-size: 40px;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .calendar-days {
-    width: 57.5%;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .calendar-days .day {
-    font-size: 36px;
-    font-weight: 500;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates {
-    width: 58.5%;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates .date {
-    width: 86px;
-    height: 80px;
-    font-weight: 500;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 4px;
-    padding: 7px 0 0 34px;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates .date::after {
-    display: none;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates .date .games {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates .date .games .status1-dot {
-    width: 10px;
-    height: 10px;
-    background-color: transparent;
-    border-radius: 50%;
-    margin: 5px auto 0 auto;
-    position: absolute;
-    bottom: 5%;
-    left: 60%;
-    -webkit-transform: translateX(-60%);
-            transform: translateX(-60%);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates .date .games .status1-dot::before {
-    content: "\f287";
-    font-family: "bootstrap-icons";
-    font-size: 5px;
-    color: #EA1E23;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates .date .games .normalgame-dot {
-    width: 10px;
-    height: 10px;
-    background-color: transparent;
-    border-radius: 50%;
-    margin: 5px auto 0 auto;
-    position: absolute;
-    bottom: 5%;
-    left: 40%;
-    -webkit-transform: translateX(-40%);
-            transform: translateX(-40%);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .calendar-dates .date .games .normalgame-dot::before {
-    content: "\f287";
-    font-family: "bootstrap-icons";
-    font-size: 5px;
-    color: #06ACED;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .circle-wrap {
-    width: 58.5%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .circle-wrap span {
-    margin: 30px 50px 0 0;
-    font-size: 18px;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .circle-wrap span:nth-child(1) {
-    position: relative;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .circle-wrap span:nth-child(1)::before {
-    content: "\f287";
-    position: absolute;
-    font-family: "bootstrap-icons";
-    font-size: 10px;
-    color: #06ACED;
-    left: -30%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .circle-wrap span:nth-child(2) {
-    position: relative;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .circle-wrap span:nth-child(2)::before {
-    content: "\f287";
-    position: absolute;
-    font-family: "bootstrap-icons";
-    font-size: 10px;
-    color: #EA1E23;
-    left: -30%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details {
-    margin-top: 90px;
-    display: block;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .game-info {
-    width: 58.5%;
-    height: 300px;
-    display: inline-block;
-    position: relative;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .game-info .status1 {
-    width: 75%;
-    border: 2px solid #EA1E23;
-    text-align: left;
-    font-size: 20px;
-    padding: 25px 0 25px 65px;
-    border-radius: 10px;
-    margin: 20px 0 0 140px;
-    position: relative;
-    cursor: default;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .game-info .status1::before {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 20px;
-    background: url(../images/subcalendar-cancle.png);
-    top: 50%;
-    left: 5%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .game-info .normalgame {
-    width: 75%;
-    border: 2px solid #06ACED;
-    text-align: left;
-    font-size: 20px;
-    padding: 25px 0 25px 65px;
-    border-radius: 10px;
-    margin: 20px 0 0 140px;
-    position: relative;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .game-info .normalgame::before {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 20px;
-    background: url(../images/subcalendar-result.png);
-    top: 50%;
-    left: 5%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .date-detail-wrap {
-    width: 100px;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .date-detail-wrap .date-heading {
-    margin: 0 0 0 30px;
-    position: absolute;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .date-detail-wrap .date-heading .date-heading-day {
-    font-size: 50px;
-    font-weight: 500;
-  }
-  .sub-body section.calendar-container .calendar-inner .content-box .selected-date-details .date-detail-wrap .date-heading .date-heading-weekday {
-    font-size: 20px;
-    font-weight: 500;
   }
   /* ##################리모콘################## */
   .small-side-nav {
