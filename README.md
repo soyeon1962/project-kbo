@@ -71,14 +71,14 @@
         <li></li>
         </ul>
         <h3>📌 영상 자동 재생 및 내비게이션 구현</h3>
-        <img width="85%" src="https://github.com/user-attachments/assets/244d00ac-079f-4902-862b-44d60dc22eff" />
+        <img width="85%" src="https://github.com/soyeon1962/image-folder/blob/main/gif/main-visual.gif?raw=true" />
         <ul>
             <li>메인 페이지 첫 진입 시 영상이 재생됩니다.</li>
             <li>아래로 부드럽게 드롭다운되는 내비게이션 구현하였습니다.</li>
             <li>스크롤 유도 애니메이션이 있습니다.</li>
         </ul>
         <h3>📌 JS 배열을 활용한 데이터 표시 및 탭 메뉴</h3>
-        <img width="85%" src="https://github.com/user-attachments/assets/228ea176-7e24-4279-bc5c-7a90d16c9509" />
+        <img width="85%" src="https://github.com/soyeon1962/image-folder/blob/main/gif/match.gif?raw=true" />
         <ul>
             <li>JS 내 배열을 활용하여 경기 결과를 표시하였습니다.</li>
             <li>각 경기 일정을 클릭할 시 우측에 상세 경기 일정이 나타납니다.</li>
@@ -88,21 +88,21 @@
             <li>div 생성 및 데이터 표기, 이미지 삽입을 모두 JS 함수가 담당합니다(디자인은 CSS에서 적용).</li>
         </ul>
         <h3>📌 무한 재생 슬라이드</h3>
-        <img width="85%" src="https://github.com/user-attachments/assets/4df45122-7460-4bca-9050-0858dc242ae3" />
+        <img width="85%" src="https://github.com/soyeon1962/image-folder/blob/main/gif/news.gif?raw=true" />
         <ul>
         <li>무한 재생 슬라이드 기능을 구현하여, 사용자가 사이트를 탐색할 때 자연스럽게 콘텐츠를 이어서 볼 수 있게 만들었습니다.</li>
         <li>슬라이드에 표시된 콘텐츠는 자동으로 순차적으로 이동하며, 사용자가 종료 없이 계속해서 슬라이드를 확인할 수 있도록 디자인되었습니다.</li>
         <li>CSS와 JS의 조합을 통해 부드럽고 끊김 없는 애니메이션 효과를 구현하였습니다.</li>
         </ul>
         <h3>📌 하이라이트 영상 좌우 회전문 슬라이드</h3>
-        <img width="85%" src="https://github.com/user-attachments/assets/f0fd21a4-8022-45de-8b1b-3fba780f1ebe" />
+        <img width="85%" src="https://github.com/soyeon1962/image-folder/blob/main/gif/highlight.gif?raw=true" />
         <ul>
         <li>하이라이트 영상을 좌우로 회전하는 회전문 슬라이드 효과로 배치하여, 사용자가 주요 영상을 부드럽게 볼 수 있도록 했습니다.</li>
         <li>슬라이드의 이동 방향과 속도는 CSS 애니메이션을 활용하여 자연스럽고 직관적으로 설정하였으며, 사용자가 콘텐츠를 즐기기에 편리하도록 디자인했습니다.</li>
         <li>이 슬라이드는 사용자 경험을 고려해 영상 재생의 흐름을 끊지 않고, 다음 영상으로 자연스럽게 넘어갈 수 있도록 구현되었습니다.</li>
         </ul>
         <h3>📌 SNS 섹션 내부 스크롤 이벤트</h3>
-        <img width="85%" src="https://github.com/user-attachments/assets/29f1baf5-d4fc-4b9d-be1e-00ace6fe3d23" />
+        <img width="85%" src="https://github.com/soyeon1962/image-folder/blob/main/gif/sns.gif?raw=true" />
         <ul>
         <li>SNS 섹션 내부에 스크롤 이벤트를 적용하여, 사용자가 스크롤을 내리면서 각 SNS 콘텐츠가 동적으로 나타나도록 구현했습니다.</li>
         <li>스크롤 이벤트가 발생할 때마다, 각 SNS 콘텐츠는 부드럽게 슬라이드 인 효과를 주어 시각적으로 자연스럽게 사용자에게 정보를 전달합니다.</li>
@@ -110,7 +110,7 @@
         <li>이 기능은 JS와 CSS를 조합하여, 다양한 콘텐츠가 상호작용하면서 사용자 경험을 더욱 풍부하게 만듭니다.</li>
         </ul>
         <h3>📌 버튼 호버 시 슬라이드 기능 구현</h3>
-        <img width="85%" src="https://github.com/user-attachments/assets/0bebb77e-4d16-4643-8c47-2a479c8e34ad" />
+        <img width="85%" src="https://github.com/soyeon1962/image-folder/blob/main/gif/goods.gif?raw=true" />
         <ul>
         <li>버튼 호버 시 슬라이드 효과를 구현하여, 사용자가 버튼에 마우스를 올렸을 때 시각적으로 주목을 끌 수 있도록 했습니다.</li>
         <li>슬라이드 효과는 CSS 애니메이션을 활용하여 부드럽게 움직이며, 버튼을 클릭할 유도성을 높였습니다.</li>
