@@ -1,7 +1,7 @@
 <div style="text-align: left;"> 
   <h2 style="border-bottom: 1px solid #d8dee4;"> ⚾KBO 홈페이지 리뉴얼 팀 프로젝트⚾ </h2>
   <div align="center">
-    <img width="70%" src="https://github.com/user-attachments/assets/caf16d15-f543-4252-9541-e4a55856562e"/>
+    <img width="70%" src="https://github.com/soyeon1962/image-folder/blob/main/assets/2024-TEAM%20PROJECT-KBO.png?raw=true"/>
     <p>🖥 <a href="https://soyeon1962.github.io/project-kbo/">리뉴얼 데모 사이트 바로가기</a> 📱</p>
   </div>
   <div style="text-align: left;"> 
