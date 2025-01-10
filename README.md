@@ -62,7 +62,7 @@
         <h2 style="border-bottom: 1px solid #d8dee4;"> ⚙ 주요 기능 ⚙</h2>
         <h3>📰메인 페이지📰</h3>
         <h3>풀페이지 스크롤 이벤트 구현</h3>
-        <img width="85%" src=""/>
+        <img width="85%" src="https://github.com/soyeon1962/image-folder/blob/main/gif/full-page-resize.gif?raw=true"/>
         <ul>
         <li>Vanilla JS만을 활용하여 플러그인 없이 풀페이지 스크롤 기능을 구현했습니다.</li>
         <li>wheel 이벤트 리스너를 통해 스크롤 방향에 따라 각 섹션으로 부드럽게 이동하도록 설정했습니다.</li>
