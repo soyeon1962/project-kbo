@@ -246,33 +246,34 @@ window.addEventListener('DOMContentLoaded', function(){
     for(let i = 0; i < nextCount; i++){
       const player = filteredPlayers[i];
       const card = document.createElement("div");
-      card.className = `card ${player.id}`;
-      card.style.backgroundColor = `${teamColor[player.id]}`;
+      card.className = `flip`;
 
       card.innerHTML = `
-        <div class="card-front">
-          <h1>${player.number}</h1>
-          <img src="${player.teamLogo}" alt="" class="team-logo" id="team-logo">
-          <img src="${player.playerImage}" alt="" class="player">
-          <h5>${player.position}</h5>
-          <h2>${player.name}</h2>
-          <div class="gradiant-box"></div>
-        </div>
-        <div class="card-back">
-          <div class="gradiant-box"></div>
-          <div class="blur-background">
-            <h2>${player.name}</h2>
+      <div class="card ${player.id}" style="background-color: ${teamColor[player.id]};">
+          <div class="card-front">
             <h1>${player.number}</h1>
-            <div class="text-box">
-              <span><b>생년월일</b> ${player.birth}</span>
-              <span><b>체<em></em>격</b> ${player.physique}</span>
-              <span><b>출<em></em>신<em></em>교</b> ${player.school}</span>
-            </div>
-            <img src="${player.teamLogo}" alt="" class="team-mini-logo" id="team-logo">
+            <img src="${player.teamLogo}" alt="" class="team-logo" id="team-logo">
+            <img src="${player.playerImage}" alt="" class="player">
+            <h5>${player.position}</h5>
+            <h2>${player.name}</h2>
+            <div class="gradiant-box"></div>
           </div>
-          <img src="${player.playerImage}" alt="" class="player">
-          <img src="${player.teamLogo}" alt="" class="team-logo" id="team-logo">
-        </div>
+          <div class="card-back">
+            <div class="gradiant-box"></div>
+            <div class="blur-background">
+              <h2>${player.name}</h2>
+              <h1>${player.number}</h1>
+              <div class="text-box">
+                <span><b>생년월일</b> ${player.birth}</span>
+                <span><b>체<em></em>격</b> ${player.physique}</span>
+                <span><b>출<em></em>신<em></em>교</b> ${player.school}</span>
+              </div>
+              <img src="${player.teamLogo}" alt="" class="team-mini-logo" id="team-logo">
+            </div>
+            <img src="${player.playerImage}" alt="" class="player">
+            <img src="${player.teamLogo}" alt="" class="team-logo" id="team-logo">
+          </div>
+          </div>
       `;
 
       cardWrap.appendChild(card);

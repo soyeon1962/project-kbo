@@ -874,6 +874,11 @@ document.addEventListener('DOMContentLoaded', function(){
               if(sooriLocation < 10){
                 sooriLocation++;
                 sooriSlideContainer.style.top = `calc(30dvh - ${sooriLocation*230}px)`;
+                
+                document.querySelectorAll('.box').forEach(function(soori){
+                  soori.classList.remove('active');
+                });
+                document.getElementById(`box${sooriLocation+1}`).classList.add('active');
 
                 //일단 숨기기
                 sooriSection.classList.add('hidden');
@@ -970,6 +975,11 @@ document.addEventListener('DOMContentLoaded', function(){
                   teamHomepageBtn.classList.remove('hidden');
                   teamSnsBtn.classList.remove('hidden');
                 }, 300);
+
+                document.querySelectorAll('.box').forEach(function(soori){
+                  soori.classList.remove('active');
+                });
+                document.getElementById(`box${sooriLocation+1}`).classList.add('active');
 
                   if(sooriLocation === 10){
                     sooriSection.style.width = '100vw';
