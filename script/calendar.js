@@ -1044,7 +1044,7 @@ const selectedDateDetails = document.getElementById("selectedDateDetails");
 
 const today = new Date();
 let currentMonth = today.getMonth=5; 
-let currentYear = today.getFullYear();
+let currentYear = today.getFullYear()-1;
 let selectedDateElement = null;
 
 const mediaQuery = window.matchMedia("(max-width: 768px)"); 
